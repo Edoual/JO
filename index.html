@@ -8,16 +8,18 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh; /* Optional: to center the video vertically */
     }
     .video-container {
+      max-width: 100%;
       width: 100%;
-      max-width: 1520px; /* Ensure the video container does not exceed 1520px */
+      height: auto;
+      max-height: 389;
     }
     video {
-      width: 100%; /* Allow the width to adjust automatically */
-      height: 389px; /* Set the height to 389 pixels */
+      width: 100%;
+      height: auto;
+      max-height: 389;
+      
     }
   </style>
 </head>
