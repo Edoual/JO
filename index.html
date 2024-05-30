@@ -8,14 +8,19 @@
       margin: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
+      height: 100vh; /* Optionnel : centrer verticalement */
     }
     .video-container {
-      max-width: 1520px;
-      width: 100%;
+      width: 1568px;
+      height: 441px;
+      overflow: hidden; /* Masquer la partie de la vidéo qui dépasse du conteneur */
     }
     video {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover; /* Couvrir l'entiereté du cadre */
+      object-position: center bottom; /* Centrer horizontalement et positionner en bas */
     }
   </style>
 </head>
@@ -28,3 +33,4 @@
   </div>
 </body>
 </html>
+
